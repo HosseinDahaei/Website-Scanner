@@ -1,0 +1,84 @@
+
+    <html>
+    <head>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+        li {
+            margin: 5px 0;
+        }
+        .caret {
+            cursor: pointer;
+            user-select: none;
+            padding: 5px 10px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            display: inline-block;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .caret:hover {
+            background-color: #e6e6e6;
+        }
+        .caret::before {
+            content: "\25B6";  /* Right arrow */
+            color: #555;
+            display: inline-block;
+            margin-right: 6px;
+            transition: transform 0.3s;
+        }
+        .caret-down::before {
+            transform: rotate(90deg);  /* Down arrow */
+        }
+        .nested {
+            display: none;
+            margin-left: 20px;
+            border-left: 1px dashed #ddd;
+            padding-left: 15px;
+        }
+        .active {
+            display: block;
+        }
+        .leaf {
+            color: green;
+        }
+        .node-with-children {
+            color: blue;
+        }
+        </style>
+    </head>
+    <body>
+        <h2>Tree Structure</h2>
+        <ul class="tree">
+            
+        <li>
+            <span class="caret node-with-children">https://realpython.com/ (66)</span>
+            <ul class="nested">
+        <li>
+            <span class="caret node-with-children">books (3)</span>
+            <ul class="nested"><li class='leaf'>python-basics-book (0)</li><li class='leaf'>python-tricks-book (0)</li><li class='leaf'>cpython-internals-book (0)</li></ul>
+        </li>
+        <li>
+            <span class="caret node-with-children">front-end (10)</span>
+            <ul class="nested"><li class='leaf'>python-vs-javascript-for-python-devs (0)</li><li class='leaf'>cross-platform-gui-apps-kivy (0)</li><li class='leaf'>headless-selenium-testing-with-python-and-phantomjs (0)</li><li class='leaf'>flask-project (0)</li><li class='leaf'>pyscript-python-in-browser (0)</li><li class='leaf'>flask-by-example-updating-the-ui (0)</li><li class='leaf'>flask-by-example-custom-angular-directive-with-d3 (0)</li><li class='leaf'>django-and-ajax-form-submissions (0)</li><li class='leaf'>flask-logging-messages (0)</li><li class='leaf'>python-rich-package (0)</li></ul>
+        </li><li class='leaf'>python-strings (0)</li><li class='leaf'>quizzes (0)</li><li class='leaf'>databases (0)</li><li class='leaf'>python-news-august-2024 (0)</li><li class='leaf'>contact (0)</li><li class='leaf'>basics (0)</li><li class='leaf'>start-here (0)</li><li class='leaf'>best-practices (0)</li><li class='leaf'>energy-policy (0)</li><li class='leaf'>docker (0)</li><li class='leaf'>career (0)</li><li class='leaf'>python-walrus-operator (0)</li><li class='leaf'>testing (0)</li><li class='leaf'>flask (0)</li><li class='leaf'>sorting-dictionaries-keys-values-more (0)</li><li class='leaf'>numpy (0)</li><li class='leaf'>intermediate (0)</li><li class='leaf'>python-functional-programming (0)</li><li class='leaf'>python-classes (0)</li><li class='leaf'>privacy-policy (0)</li><li class='leaf'>python-logging (0)</li><li class='leaf'>editors (0)</li><li class='leaf'>python-protocol (0)</li><li class='leaf'>rpp (0)</li><li class='leaf'>primer-on-jinja-templating (0)</li><li class='leaf'>python-async-iterators (0)</li><li class='leaf'>interacting-rest-apis-python (0)</li><li class='leaf'>installable-django-app (0)</li><li class='leaf'>write-for-us (0)</li><li class='leaf'>gui (0)</li><li class='leaf'>web-scraping (0)</li><li class='leaf'>newsletter (0)</li><li class='leaf'>login (0)</li><li class='leaf'>python (0)</li><li class='leaf'>all (0)</li><li class='leaf'>learning-paths (0)</li><li class='leaf'>search (0)</li><li class='leaf'>machine-learning (0)</li><li class='leaf'>data-science (0)</li><li class='leaf'>join (0)</li><li class='leaf'>gamedev (0)</li><li class='leaf'>advanced (0)</li><li class='leaf'>become-an-instructor (0)</li><li class='leaf'>projects (0)</li><li class='leaf'>pandas-groupby-real-world-data (0)</li><li class='leaf'>exercises-introduction-web-scraping (0)</li><li class='leaf'>learner-stories (0)</li><li class='leaf'>web-dev (0)</li><li class='leaf'>data-structures (0)</li><li class='leaf'>astrophysics-pandas-matplotlib (0)</li><li class='leaf'>simulate-text-file (0)</li><li class='leaf'>django (0)</li><li class='leaf'>data-viz (0)</li><li class='leaf'>sponsorships (0)</li><li class='leaf'>team (0)</li><li class='leaf'>community (0)</li><li class='leaf'>tools (0)</li><li class='leaf'>office-hours (0)</li><li class='leaf'>python-function-names (0)</li><li class='leaf'>devops (0)</li><li class='leaf'>huggingface-transformers (0)</li><li class='leaf'>train-test-split-python-data (0)</li><li class='leaf'>community (0)</li><li class='leaf'>api (0)</li></ul>
+        </li>
+        </ul>
+        <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            var togglers = document.getElementsByClassName("caret");
+            for (var i = 0; i < togglers.length; i++) {
+                togglers[i].addEventListener("click", function() {
+                    this.parentElement.querySelector(".nested").classList.toggle("active");
+                    this.classList.toggle("caret-down");
+                });
+            }
+        });
+        </script>
+    </body>
+    </html>

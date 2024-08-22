@@ -1,0 +1,80 @@
+https://realpython.com/
+├── write-for-us
+├── web-scraping
+├── web-dev
+├── train-test-split-python-data
+├── tools
+├── testing
+├── team
+├── start-here
+├── sponsorships
+├── sorting-dictionaries-keys-values-more
+├── simulate-text-file
+├── search
+├── rpp
+├── quizzes
+├── python-walrus-operator
+├── python-strings
+├── python-protocol
+├── python-news-august-2024
+├── python-logging
+├── python-functional-programming
+├── python-function-names
+├── python-classes
+├── python-async-iterators
+├── python
+├── projects
+├── privacy-policy
+├── primer-on-jinja-templating
+├── pandas-groupby-real-world-data
+├── office-hours
+├── numpy
+├── newsletter
+├── machine-learning
+├── login
+├── learning-paths
+├── learner-stories
+├── join
+├── intermediate
+├── interacting-rest-apis-python
+├── installable-django-app
+├── huggingface-transformers
+├── gui
+├── gamedev
+├── front-end
+│   ├── python-vs-javascript-for-python-devs
+│   ├── python-rich-package
+│   ├── pyscript-python-in-browser
+│   ├── headless-selenium-testing-with-python-and-phantomjs
+│   ├── flask-project
+│   ├── flask-logging-messages
+│   ├── flask-by-example-updating-the-ui
+│   ├── flask-by-example-custom-angular-directive-with-d3
+│   ├── django-and-ajax-form-submissions
+│   └── cross-platform-gui-apps-kivy
+├── flask
+├── exercises-introduction-web-scraping
+├── energy-policy
+├── editors
+├── docker
+├── django
+├── devops
+├── databases
+├── data-viz
+├── data-structures
+├── data-science
+├── contact
+├── community
+├── community
+├── career
+├── books
+│   ├── python-tricks-book
+│   ├── python-basics-book
+│   └── cpython-internals-book
+├── best-practices
+├── become-an-instructor
+├── basics
+├── astrophysics-pandas-matplotlib
+├── api
+├── all
+└── advanced
